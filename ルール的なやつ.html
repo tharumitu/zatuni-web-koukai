@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x30eb;&#x30fc;&#x30eb;&#x7684;&#x306a;&#x3084;&#x3064;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="ルール的なやつ">ルール的なやつ</h1>
+<h2 id="武器による威圧">○武器による威圧</h2>
+<p>・ナイフや鉄パイプなどの凶器を使ってRPすればPow45以下の人は遠くなら逃げる。5mほどなら命令できる。（PLも45以下だと命令聞かないとダメ。）<br>
+65以下の人はPowロールをする。それ以上の場合は効果なし。<br>
+銃器の場合は65以下でナイフなどの45以下、70以上はペナルティ付きでPowロール。経歴次第ではペナルティなし。</p>
+<p>・ナイフなどの刃物と銃器による攻撃がハード成功以上の場合対象は出血する。出血は1ターンにレベル分のダメージを受ける。</p>
+<p>・鉄パイプなどの鈍器による攻撃がハード成功以上の場合対象は怯み状態になる。怯みはレベル×20Dexが下がる。Dexが0になるor怯みレベルが3になったときは昏倒状態に変化する。怯みはラウンド終了時1レベル下がる。</p>
+<h2 id="戦闘関連">○戦闘関連</h2>
+<p>・防御について<br>
+盾などによる防御は攻撃を受けた際に回避,応戦の代わりとして使用可能。防御にはSTRロール防御とDEXロール防御が存在する。防御に使うアイテムはダメージを受けた際そのダメージ分耐久が減る（＊アイテムに装甲がある場合は装甲分軽減した後に耐久が減る）。オーバーした際はそのアイテムを使っていた者にオーバー分のダメージが入る。イクストリーム以上の近接攻撃を受ける又はオーバー分のダメージを喰らうと怯み状態1となる。</p>
+<p>・STRロール防御<br>
+近接攻撃に対する防御。失敗又は部位狙い攻撃を受けた際はダメージの肩代わりはできるが怯み1が付与される。</p>
+<p>・DEXロール防御<br>
+どの攻撃にも対応できる防御。失敗又は部位狙い攻撃を受けた際はダメージを肩代わりできない。</p>
+<p>・銃弾の回避<br>
+回避は銃弾を避けられるが行動済みになる。（銃弾自体は避けられないが避けるような動作をして相手に射撃を失敗させる的なニュアンス。）応戦は不可。盾などによる防御は可能。</p>
+<p>・回避のイクストリーム/クリティカル<br>
+回避でイクストリームをした場合次の行動にボーナス+1。クリティカルの場合反撃。</p>
+<p>・イクストリームで攻撃した場合ダメージ最大ではなくダメージロールにボーナス+1。</p>
+<p>・銃器は至近距離の場合確定で当たる。</p>
+<p>・戦闘技能と回避系技能のレベル（レギュラーとか）の差が2以上のとき、部位狙いで攻撃が可能になる。ただし急所への攻撃は不可能。部位狙いできない時は胴体にダメージが入る。</p>
+<h2 id="体関連">○体関連</h2>
+<p>・部位ごとに耐久がある。最大HPが高いほど部位の耐久も上がる。<br>
+○最大HPと部位耐久</p>
+<table>
+<thead>
+<tr>
+<th>部位\HP</th>
+<th>5〜8</th>
+<th>9〜12</th>
+<th>13〜16</th>
+<th>17〜18</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>右/左腕</td>
+<td>4</td>
+<td>6</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td>右/左足</td>
+<td>4</td>
+<td>6</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td>頭</td>
+<td>3</td>
+<td>5</td>
+<td>6</td>
+<td>8</td>
+</tr>
+<tr>
+<td>胴体</td>
+<td>6</td>
+<td>9</td>
+<td>10</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<p>○部位耐久の値とそれぞれの部位への影響</p>
+<table>
+<thead>
+<tr>
+<th>部位\耐久</th>
+<th>0</th>
+<th>-最大耐久</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腕×1</td>
+<td>片腕の使用不可。両腕オンリーの行動不可。片腕でもできるが両腕の方がいいものにはペナルティ+1。</td>
+<td>片腕が無くなる。最大HPが1減る+耐久0のときのデバフ。</td>
+</tr>
+<tr>
+<td>腕×2</td>
+<td>両腕の使用不可。</td>
+<td>両腕が無くなる。最大HPが2減る。両腕の使用不可。</td>
+</tr>
+<tr>
+<td>脚×1</td>
+<td>片脚の使用不可。片脚でもできるが両脚の方がいいものにはペナルティ+1。Movが半減。</td>
+<td>片脚が無くなる。最大HPが1減る+耐久0のときのデバフ。</td>
+</tr>
+<tr>
+<td>脚×2</td>
+<td>両脚の使用不可。Mov0。</td>
+<td>両脚が無くなる。最大HPが2減る+耐久0のときのデバフ。</td>
+</tr>
+<tr>
+<td>頭</td>
+<td>怯み9がつく。</td>
+<td>即死</td>
+</tr>
+<tr>
+<td>胴体</td>
+<td>怯み6がつく。</td>
+<td>即死</td>
+</tr>
+</tbody>
+</table>
+<h2 id="マヌーバー関連">○マヌーバー関連</h2>
+<p>・マヌーバーは近接技能で行えるが、技能の種類によってはできないものもある。（例えば刀剣の技能で人を突き飛ばすなど。）</p>
+<p>・片手で使える銃器の場合マヌーバーを使うことができる。（例えば人質取ったりできる）</p>
+<p>○マヌーバーでできることの例<br>
+レギュラー（例）</p>
+<table>
+<thead>
+<tr>
+<th>パンチ（格闘）</th>
+<th>1d3+db</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>突き（投げ）飛ばす</td>
+<td>ダメ（ぶつかった場所で変動）+怯み1</td>
+</tr>
+<tr>
+<td>掴みかかる</td>
+<td>行動にペナルティ+1。離れるにはSTR対抗。</td>
+</tr>
+<tr>
+<td>転ばせる</td>
+<td>1d3+転倒1</td>
+</tr>
+</tbody>
+</table>
+<p>ハード（例）</p>
+<table>
+<thead>
+<tr>
+<th>キック（格闘）</th>
+<th>1d6+db</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>組み付く</td>
+<td>両者STR対抗しかできなくなる。勝利した側は組みつき解除or1d6+dbの攻撃を選択できる。</td>
+</tr>
+<tr>
+<td>地面に叩きつける</td>
+<td>1d3+転倒1+怯み1</td>
+</tr>
+<tr>
+<td>土などを目にぶつける</td>
+<td>1d3+視界不良1</td>
+</tr>
+</tbody>
+</table>
+<p>イクストリーム（例）</p>
+<table>
+<thead>
+<tr>
+<th>急所への攻撃（銃器）</th>
+<th>ダメージ2倍+出血3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>急所への攻撃（刃物）</td>
+<td>ダメージ1.5倍+出血2（切り捨て）</td>
+</tr>
+<tr>
+<td>急所への攻撃（格闘or鈍器）</td>
+<td>ダメージ1.5倍+怯み2（切り捨て）</td>
+</tr>
+<tr>
+<td>締め付け（格闘）</td>
+<td>両者STR対抗しかできなくなる。締め付け側が勝利すると相手に1d6+怯み6。負けると締め付けから脱出される。</td>
+</tr>
+<tr>
+<td>物の奪取or弾き飛ばし</td>
+<td>対象の手に持っている物を弾き飛ばす。片手が空いている場合は奪取が可能。弾き飛ばした物に使用した攻撃分のダメージ（拳なら1d3+db）。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="状態異常一覧">○状態異常一覧</h2>
+<p>・出血<br>
+出血は自ターン開始時にレベル分のダメージを受ける。傷1つ治すごとに1レベル下がる。<br>
+医学で治療された場合治療中は出血が止まり成功すれば出血は0になる。失敗するとかかったターン分のダメージを受ける。傷が0のときは出血レベルも0になる。<br>
+・怯み<br>
+怯みはレベル×20Dexが下がる。Dexが0になるor怯みレベルが3になったときは昏倒状態が追加される。怯みはラウンド終了時1レベル下がる。<br>
+・昏倒<br>
+全ての行動が不可能になる。怯みレベルが0の時に解除され、レベルは1が上限。<br>
+・気絶<br>
+HP1以下又はショックロール失敗時になる状態。HPが2以上,気絶から3ターン経過,Conの成功の3つの条件を満たすことで気絶から復活する。<br>
+・重症（システム変更）<br>
+ショックロールをするレベルのダメージを受けるとなる。常に怯み1,視界不良1が付与される。HPが1度完全回復するかつ1日が経過するまで続く。<br>
+・転倒<br>
+次のターン時に移動することができなくなる。<br>
+・視界不良<br>
+行動にペナルティが+1される。ラウンド終了時2レベル下がる。2レベルで視界衰弱に変化する。<br>
+・視界衰弱<br>
+行動にペナルティが+2される。ラウンド終了時に1レベル下がる。2レベルで失明する。<br>
+・失明<br>
+行動にペナルティが+3される。医療機関で治療することができる。</p>
+<h2 id="探索関連">○探索関連</h2>
+<p>・目星で得た情報などはDMに送る。（RPをして情報共有することになるから）</p>
+<p>・なるべくキャラクター発言で話す（質問とか以外はRPで話す）。例えばして欲しいことを他の人に伝えたり指示したりするときにRPで伝えるなど。</p>
+<h2 id="技能関連">○技能関連</h2>
+<p>○回復系<br>
+・応急手当は手当にいるアイテムなどは特にないがどのように治すか説明しないと治せない(例えばナイフで切られた場所を布で止血するなど。)。怪我に対して適切な治療と判断できないときも無効となる。</p>
+<p>・医学は治療に長いターンと医療器具が必要になる。代わりに応急手当てでは治せないような怪我も治せる（例えば足の骨折は応急手当ではあまり効果がないが医学なら骨折前と同程度の能力に戻せる。ただし大怪我を消すのではなく同程度の能力に戻しているだけなので骨折自体は治る訳ではない。)。傷を治すのには2ターン,骨折などの大怪我の治療には4ターンかかる。</p>
+
+            
+            
+        </body>
+        </html>
